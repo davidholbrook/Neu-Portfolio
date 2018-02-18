@@ -29,9 +29,15 @@ h4 {font-size: 1.25em;}
 
 small, .font_small {font-size: 0.8em;}
 
+.title{
+    border-bottom: 1px solid #d9d5de;
+}
+
 .background{
-    background: #000000 url('images/background.jpg');
+    background: #000000 url('images/background.jpg') fixed;
+    background-size: cover;
     padding: 2rem 2.77rem;
+    margin-bottom: 2rem;
 }
 
 .mainHead{
@@ -95,4 +101,7 @@ small, .font_small {font-size: 0.8em;}
 
 main{
     padding: 0 30rem 0 2rem;
+}
+main.homepage{
+    padding: 0 2rem;
 }
