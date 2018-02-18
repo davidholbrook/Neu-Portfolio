@@ -1,14 +1,16 @@
-import React from 'react'
-import Link from 'gatsby-link'
+import React from 'react';
+import Link from 'gatsby-link';
+
+import Logo from '../../layouts/images/Logo';
 
 const Header = () => (
-  <div role="header" className="mainHead">
-      <h1>
-        <Link to="/">
-          David Holbrook
-        </Link>
+  <div role="Banner" className="mainHead">
+    <Link to="/">
+      <h1 className="logo">
+        <Logo width="120" height="120" />
       </h1>
-      <nav className="mainNav">
+    </Link>
+    <nav className="mainNav">
       <li>
         <Link to="/">About</Link>
       </li>
@@ -18,8 +20,8 @@ const Header = () => (
       <li>
         <Link to="/">Contact</Link>
       </li>
-      </nav>
+    </nav>
   </div>
-)
+);
 
-export default Header
+export default Header;
