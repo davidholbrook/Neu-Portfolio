@@ -6,7 +6,9 @@ const ProjectCard = props => (
     <div className="ProjectCard__background" style={{ backgroundColor: props.bgColor }}>
       <img src={props.logo} alt="The project's logo" />
     </div>
-    {props.children}
+    <div className="ProjectCard__children">
+      {props.children}
+    </div>
   </div>
 );
 

@@ -1,20 +1,44 @@
+$fira:  'Fira Sans', Verdana, Geneva, Tahoma, sans-serif;
+$Crimson: 'Crimson Text', Georgia, 'Times New Roman', Times, serif;
+
 .ProjectCard__wrapper{
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
   margin-bottom: 2rem;
 }
 .ProjectCard{
   background-color: #e3dfd9;
   border: solid 1px #c2bcb2;
   display: flex;
-  width: 40rem;
+  width: 42rem;
+  margin-bottom: 2rem;
 }
 
 .ProjectCard__background{
-  width: 202px;
-  height: 202px;
+  width: 300px;
+  height: 100%;
   margin-right: 1.11rem;
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+.ProjectCard__children{
+  flex-direction: column;
+  h2{
+    margin-top: 1.5rem;
+    text-transform: uppercase;
+  }
+}
+
+.ProjectCard__btn{
+  background: #000000;
+  color: #fff;
+  font-family: $fira;
+  text-decoration: none;
+
+  display: inline-block;
+  padding: 10px 20px;
+  margin-bottom: 2rem;
 }
