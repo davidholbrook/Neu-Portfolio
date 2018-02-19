@@ -22,6 +22,9 @@ $Crimson: 'Crimson Text', Georgia, 'Times New Roman', Times, serif;
   display: flex;
   align-items: center;
   justify-content: center;
+  img{
+    padding: 1rem;
+  }
 }
 
 .ProjectCard__children{
