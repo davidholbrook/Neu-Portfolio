@@ -4,7 +4,7 @@ import Helmet from 'react-helmet';
 
 import Header from '../components/Header';
 import AboutMe from '../components/About';
-import './index.scss';
+import './_scss/index.scss';
 
 /* eslint-disable */
 class TemplateWrapper extends Component {
