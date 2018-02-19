@@ -1,0 +1,20 @@
+.ProjectCard__wrapper{
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 2rem;
+}
+.ProjectCard{
+  background-color: #e3dfd9;
+  border: solid 1px #c2bcb2;
+  display: flex;
+  width: 40rem;
+}
+
+.ProjectCard__background{
+  width: 202px;
+  height: 202px;
+  margin-right: 1.11rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
