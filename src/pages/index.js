@@ -15,7 +15,7 @@ const IndexPage = () => (
   <main className="fullwidth">
     <h2 className="title">Featured Projects</h2>
     <div className="ProjectCard__wrapper">
-      <ProjectCard logo={SpiritedFeet} bgColor="#142440">
+      <ProjectCard logo={SpiritedFeet} bgColor="#142440" link="project/spiritedfeet">
         <h2>Spirited Feet</h2>
         <p>Spirited Feet is a Christian dance company based in Woodbury, Minnesota. I was approached by them with the challenge of redesigning their old website using WordPress as the management system.</p>
       </ProjectCard>
