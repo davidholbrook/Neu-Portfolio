@@ -1,18 +1,25 @@
 module.exports = {
   siteMetadata: {
-    title: 'Gatsby Default Starter',
+    title: 'This awesome website',
   },
   plugins: [
     'gatsby-plugin-react-helmet',
     'gatsby-plugin-sass',
     {
-      resolve: 'gatsby-plugin-nprogress',
+      resolve: 'gatsby-plugin-manifest',
       options: {
-      // Setting a color is optional.
-        color: 'tomato',
-        // Disable the loading spinner.
-        showSpinner: true,
+        name: 'David Holbrook',
+        short_name: 'davidholbrook',
+        start_url: '/',
+        background_color: '#2e2f2f',
+        theme_color: '#2e2f2f',
+        display: 'minimal-ui',
       },
+    },
+    'gatsby-plugin-offline',
+    {
+      resolve: 'gatsby-plugin-nprogress',
+      color: 'tomato',
     },
   ],
 };

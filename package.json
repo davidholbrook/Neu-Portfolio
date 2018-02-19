@@ -6,11 +6,13 @@
   "dependencies": {
     "gatsby": "^1.9.199",
     "gatsby-link": "^1.6.37",
+    "gatsby-plugin-manifest": "^1.0.14",
     "gatsby-plugin-nprogress": "^1.0.12",
+    "gatsby-plugin-offline": "^1.0.14",
     "gatsby-plugin-react-helmet": "^2.0.5",
     "gatsby-plugin-sass": "^1.0.17",
+    "nprogress": "^0.2.0",
     "prop-types": "^15.6.0",
-    "proptypes": "^1.1.0",
     "react": "^16.2.0",
     "react-helmet": "^5.2.0"
   },
