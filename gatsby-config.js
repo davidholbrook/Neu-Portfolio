@@ -2,6 +2,17 @@ module.exports = {
   siteMetadata: {
     title: 'Gatsby Default Starter',
   },
-  plugins: ['gatsby-plugin-react-helmet'],
-  ['gatsby-plugin-sass'],
+  plugins: [
+    'gatsby-plugin-react-helmet',
+    'gatsby-plugin-sass',
+    {
+      resolve: 'gatsby-plugin-nprogress',
+      options: {
+      // Setting a color is optional.
+        color: 'tomato',
+        // Disable the loading spinner.
+        showSpinner: true,
+      },
+    },
+  ],
 };
