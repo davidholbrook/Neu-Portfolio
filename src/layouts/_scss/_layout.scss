@@ -99,6 +99,28 @@ small, .font_small {font-size: 0.8em;}
     padding: 10px;
 }
 
+.portfolioLink{
+    color: rgba(#000000, .5);
+    font-family: $fira;
+    font-size: 1.5rem;
+    text-decoration: none;
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: 400;
+
+    display: block;
+    border: 3px solid rgba(#000000, .5);
+    padding: 1rem;
+    grid-column: span 2;
+
+    transition: all 320ms ease-in-out;
+
+    &:hover{
+        background: #7f7f7f;
+        color: #ffffff;
+    }
+}
+
 main{
     padding: 0 30rem 0 2rem;
 }
