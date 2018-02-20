@@ -15,6 +15,8 @@ Starting with  [Underscores](http://underscores.me/) a basic, plain, starter the
 
 To make this experience I started in understanding the problem with the website, noting what works and what could be improved. From here I worked with the client through a mentor, on sketching and mocking up a few solutions to how we could solve this problem through the use of a unique interface and custom development.
 
+![mobile screenshots](./spirited-feet-mobile.jpg)
+
 Finally, in development, using underscores, I created a multipart, single page template in WordPress and used the great [Themify Builder](https://themify.me/builder) create template regions in which the client could easily modify and create new content using a front-end user interface. After the website was finished, I helped the client in deployment and any follow-up guidance that was needed to use the website.
 
 
