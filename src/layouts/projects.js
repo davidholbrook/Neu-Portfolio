@@ -1,31 +1,24 @@
 import React from 'react';
-// import PropTypes from 'prop-types';
-// import Helmet from 'react-helmet';
 
-const postTemplate = ({ data }) => {
-  const { markdownRemark } = data;
-  const { frontmatter, html } = markdownRemark;
+export default function Template({ data }) {
+  const { markdownRemark: project } = data;
   return (
-    <main>
-      <h2>{frontmatter.title}</h2>
-      <div
-        /* eslint-disable-next-line */
-        dangerouslySetInnerHTML={{ __html: html }}
-      />
-    </main>
+    <div>
+      <h2>{project.frontmatter.title}</h2>
+      {/* eslint-disable-next-line */}
+      <div dangerouslySetInnerHTML={{ __html: project.html }} />
+    </div>
   );
-};
+}
 
-export default postTemplate;
-
-export const pageQuery = graphql`
-  query ProjectByPathName($path: String!) {
-    markdownRemark(frontmatter: { path: { eq: $path } }) {
+export const postQuery = graphql`
+  query BlogPostByPath($path: String!) {
+    markdownRemark(frontmatter: { path: { eq: $path} }) {
+      html
       frontmatter {
         path
         title
       }
-      html
     }
   }
 `;

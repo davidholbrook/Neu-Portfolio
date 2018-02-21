@@ -5,21 +5,19 @@ exports.createPages = ({ boundActionCreators, graphql }) => {
 
   const postTemplate = path.resolve('src/layouts/projects.js');
 
-  return graphql(`
-    {
-      allMarkdownRemark {
-        edges {
-          node {
-            frontmatter {
-              title
-              path
-            }
-            html
+  return graphql(`{
+    allMarkdownRemark {
+      edges {
+        node {
+          html
+          frontmatter {
+            path
+            title
           }
         }
       }
     }
-  `)
+  }`)
     .then((res) => {
       if (res.errors) {
         return Promise.reject(res.errors);
