@@ -2,7 +2,7 @@ import React from 'react';
 // import PropTypes from 'prop-types';
 // import Helmet from 'react-helmet';
 
-const ProjectWrapper = ({ data }) => {
+const postTemplate = ({ data }) => {
   const { markdownRemark } = data;
   const { frontmatter, html } = markdownRemark;
   return (
@@ -16,16 +16,16 @@ const ProjectWrapper = ({ data }) => {
   );
 };
 
-export default ProjectWrapper;
+export default postTemplate;
 
 export const pageQuery = graphql`
-  query BlogPostByPath($path: String!) {
+  query ProjectByPathName($path: String!) {
     markdownRemark(frontmatter: { path: { eq: $path } }) {
-      html
       frontmatter {
         path
         title
       }
+      html
     }
   }
 `;
