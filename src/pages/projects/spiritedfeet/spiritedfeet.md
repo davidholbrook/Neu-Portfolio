@@ -23,7 +23,7 @@ Being both designer and developer on this project, I was able to control the loo
 
 I worked through a few different concepts, finally landing on a unique one sided design. This design, after mocking it up for the client, got the green light and the go-ahead for development work.
 
-![Sticky Navagation](./navstick.png "Sticky Navagation")
+
 
 ## Development
 
@@ -39,6 +39,8 @@ Some key development points that I ran into were:
 The first challenge was creating a one-page cohesive webpage. There were a few different approaches for this, I finally decided on the many to one solution though.
 
 This worked by creating every section as its own Wordpress page. This had many benefits including tider organization and better references. After going through and creating all the pages one by one. I was able to use a custom WordPress loop that finds the pages and concatenate them into one page.
+
+![Sticky Navagation](./navstick.png "Sticky Navagation")
 
 ### Fixed Navigation
 
