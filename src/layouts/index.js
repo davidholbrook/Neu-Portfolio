@@ -4,6 +4,7 @@ import Helmet from 'react-helmet';
 
 import Header from '../components/Header';
 import AboutMe from '../components/About';
+import Footer from '../components/Footer';
 import './_scss/index.scss';
 
 /* eslint-disable */
@@ -30,6 +31,7 @@ class TemplateWrapper extends Component {
           <div>
             {this.props.children()}
           </div>
+          <Footer />
         </div>
       );
     }
@@ -49,6 +51,7 @@ class TemplateWrapper extends Component {
         <div>
           {this.props.children()}
         </div>
+        <Footer />
       </div>
     );
   }
