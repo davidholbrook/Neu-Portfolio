@@ -2,9 +2,19 @@ $fira:  'Fira Sans', Verdana, Geneva, Tahoma, sans-serif;
 $Crimson: 'Crimson Text', Georgia, 'Times New Roman', Times, serif;
 
 body{
-    font-size: 120%;
+    font-size: 140%;
     line-height: 1.45;
     font-family: 'Crimson Text', Georgia, 'Times New Roman', Times, serif
+}
+
+a:link, a:visited{
+    color: #555555;
+    text-decoration-skip-ink: auto;
+}
+
+a:hover, a:active{
+    color: #555555;
+    text-decoration-skip-ink: auto;
 }
 
 p {margin-bottom: 1.3em;}
@@ -117,7 +127,7 @@ small, .font_small {font-size: 0.8em;}
 
     &:hover{
         background: #7f7f7f;
-        color: #ffffff;
+        color: #ffffff !important;
     }
 }
 
@@ -126,4 +136,22 @@ main{
 }
 main.fullwidth{
     padding: 0 2rem;
+}
+main.grid{
+    padding: 0 2rem;
+    display: grid;
+    grid-template-columns: 200px 1fr;
+    grid-template-areas: "meta children";
+    grid-gap: 2rem;
+}
+
+.mainFooter{
+    font-size: 1rem;
+    color: #ffffff;
+    text-align: right;
+    font-family: $fira;
+
+    background: #000000;
+    padding: 1.5rem;
+    margin-top: 2rem;
 }
