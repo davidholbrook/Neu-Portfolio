@@ -4,7 +4,10 @@ $Crimson: 'Crimson Text', Georgia, 'Times New Roman', Times, serif;
 body{
     font-size: 140%;
     line-height: 1.45;
-    font-family: 'Crimson Text', Georgia, 'Times New Roman', Times, serif
+    font-family: 'Crimson Text', Georgia, 'Times New Roman', Times, serif;
+    @media(max-width: 1150px){
+        font-size: 100%;
+    }
 }
 
 a:link, a:visited{
@@ -73,6 +76,9 @@ small, .font_small {font-size: 0.8em;}
         font-size: 1.5rem;
         text-transform: uppercase;
     }
+    @media(max-width: 570px){
+        display: none;
+    }
 }
 .background--black{
     background: #000000;
@@ -95,6 +101,11 @@ small, .font_small {font-size: 0.8em;}
 
     max-width: 500px;
 
+    @media (max-width: 570px) {
+        font-size: 1rem;
+        line-height: 2rem;;
+    }
+
 }
 
 .aboutLink{
@@ -107,9 +118,14 @@ small, .font_small {font-size: 0.8em;}
     border: 2px rgba(#ffffff, .5) solid;
     border-radius: 10px;
     padding: 10px;
+
+    @media (max-width: 570px) {
+        font-size: 1rem;
+        line-height: 2rem;
+    }
 }
 
-.portfolioLink{
+.portfolioLink, button[type="submit"]{
     color: rgba(#000000, .5);
     font-family: $fira;
     font-size: 1.5rem;
@@ -129,10 +145,48 @@ small, .font_small {font-size: 0.8em;}
         background: #7f7f7f;
         color: #ffffff !important;
     }
+
+    @media (max-width: 570px) {
+        font-size: 1rem;
+        line-height: 2rem;
+    }
+}
+
+label{
+    display: block;
+    font-family: $fira;
+    font-weight: 300;
+    font-size: 1rem;
+
+    margin: .5rem 0;
+}
+
+input, textarea{
+    font-family: $fira;
+    font-weight: 300;
+    color: #555555;
+    font-size: 1rem;
+
+    border: 1px #000000 solid;
+    width: 90vw;
+    padding: 10px;
+}
+
+textarea{
+    width: 90vw;
+    height: 8rem;
+}
+
+button[type="submit"]{
+    width: 91.7vw;
+    margin-top: 2rem;
 }
 
 main{
     padding: 0 30rem 0 2rem;
+    @media(max-width: 1150px){
+        padding: 0 2rem;
+    }
 }
 main.fullwidth{
     padding: 0 2rem;
@@ -154,4 +208,8 @@ main.grid{
     background: #000000;
     padding: 1.5rem;
     margin-top: 2rem;
+
+    @media(max-width: 570px){
+        font-size: .5rem;
+    }
 }

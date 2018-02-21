@@ -6,11 +6,18 @@ $Crimson: 'Crimson Text', Georgia, 'Times New Roman', Times, serif;
   grid-template-columns: 1fr 1fr;
   grid-gap: 2rem;
   margin-bottom: 2rem;
+
+  @media (max-width:1060px) {
+    grid-template-columns: 1fr;
+  }
 }
 .ProjectCard{
   background-color: #e3dfd9;
   border: solid 1px #c2bcb2;
   display: flex;
+  @media (max-width: 560px){
+    flex-direction: column;
+  }
 }
 
 .ProjectCard__background{
@@ -23,6 +30,9 @@ $Crimson: 'Crimson Text', Georgia, 'Times New Roman', Times, serif;
   img{
     padding: 1rem;
   }
+  @media (max-width: 560px){
+    width: 100%;
+  }
 }
 
 .ProjectCard__children{
@@ -31,6 +41,10 @@ $Crimson: 'Crimson Text', Georgia, 'Times New Roman', Times, serif;
   h2{
     margin-top: 1.5rem;
     text-transform: uppercase;
+  }
+  @media (max-width: 560px){
+    text-align: center;
+    padding: 0 1rem;;
   }
 }
 

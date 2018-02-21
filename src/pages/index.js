@@ -2,6 +2,7 @@ import React from 'react';
 import Link from 'gatsby-link';
 
 import ProjectCard from '../components/ProjectCard';
+import Contact from '../components/contact';
 
 // import in all the logos.
 import SpiritedFeet from '../layouts/images/client/spiritedfeet.png';
@@ -23,7 +24,8 @@ const IndexPage = () => (
     </div>
     <Link to="/portfolio" className="portfolioLink">View all Case Studies</Link>
     <h2 className="title">Contact Me</h2>
-    <code>Insert Form Here</code>
+    <p>This is where a paragraph about me and how my services work will go. Right now this form goes nowhere, sorry.</p>
+    <Contact />
   </main>
 );
 
