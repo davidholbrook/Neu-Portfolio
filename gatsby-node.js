@@ -5,31 +5,35 @@ exports.createPages = ({ boundActionCreators, graphql }) => {
 
   const postTemplate = path.resolve('src/layouts/projects.js');
 
-  return graphql(`{
-    allMarkdownRemark {
-      edges {
-        node {
-          html
-          frontmatter {
-            path
-            title
-            role
-            url
+  return graphql(`
+    {
+      allMarkdownRemark {
+        edges {
+          node {
+            html
+            frontmatter {
+              path
+              title
+              role
+              url
+            }
           }
         }
       }
     }
-  }`)
-    .then((res) => {
-      if (res.errors) {
-        return Promise.reject(res.errors);
-      }
+  `).then((res) => {
+    if (res.errors) {
+      return Promise.reject(res.errors);
+    }
 
-      res.data.allMarkdownRemark.edges.forEach(({ node }) => {
-        createPage({
+    res.data.allMarkdownRemark.edges.forEach(({ node }) => {
+      createPage({
+        path: node.frontmatter.path,
+        component: postTemplate,
+        context: {
           path: node.frontmatter.path,
-          component: postTemplate,
-        });
+        },
       });
     });
+  });
 };
