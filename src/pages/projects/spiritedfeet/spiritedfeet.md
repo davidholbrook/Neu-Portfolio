@@ -3,6 +3,7 @@ path: '/project/spiritedfeet'
 title: 'Spirited Feet'
 role: 'Designer and Developer'
 url: 'http://spiritedfeet.com'
+bgColor: '#142440'
 ---
 
 ## Overview
@@ -23,16 +24,15 @@ Being both designer and developer on this project, I was able to control the loo
 
 I worked through a few different concepts, finally landing on a unique one sided design. This design, after mocking it up for the client, got the green light and the go-ahead for development work.
 
-
-
 ## Development
 
 I have several years of experience in Wordpress so creating a new theme in WordPress was not hard. I used Underscores as a starter theme and added custom styling and code to the theme.
 
 Some key development points that I ran into were:
-- Setting up a single page website for many WordPress pages.
-- Creating a fixed navigation menu.
-- Using Themify Builder as a content editor.
+
+* Setting up a single page website for many WordPress pages.
+* Creating a fixed navigation menu.
+* Using Themify Builder as a content editor.
 
 ### Single Page
 
