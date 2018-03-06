@@ -1,39 +1,31 @@
 const path = require('path');
 
-exports.createPages = ({ boundActionCreators, graphql }) => {
+exports.createPages = ({ graphql, boundActionCreators }) => {
   const { createPage } = boundActionCreators;
-
-  const postTemplate = path.resolve('src/layouts/projects.js');
-
-  return graphql(`
-    {
-      allMarkdownRemark {
-        edges {
-          node {
-            html
-            frontmatter {
-              path
-              title
-              role
-              url
+  return new Promise((res, rej) => {
+    graphql(`
+      {
+        allMarkdownRemark {
+          edges {
+            node {
+              frontmatter {
+                path
+              }
             }
           }
         }
       }
-    }
-  `).then((res) => {
-    if (res.errors) {
-      return Promise.reject(res.errors);
-    }
-
-    res.data.allMarkdownRemark.edges.forEach(({ node }) => {
-      createPage({
-        path: node.frontmatter.path,
-        component: postTemplate,
-        context: {
+    `).then((res) => {
+      res.data.allMarkdownRemark.edges.forEach(({ node }) => {
+        createPage({
           path: node.frontmatter.path,
-        },
+          component: path.resolve('./src/layouts/projects.js'),
+          context: {
+            slug: node.frontmatter.path,
+          },
+        });
       });
     });
+    res();
   });
 };
