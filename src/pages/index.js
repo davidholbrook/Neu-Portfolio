@@ -1,13 +1,13 @@
-import React from "react";
-import Link from "gatsby-link";
+import React from 'react';
+import Link from 'gatsby-link';
 
-import ProjectCard from "../components/ProjectCard";
-import Contact from "../components/contact";
+import ProjectCard from '../components/ProjectCard';
+import Contact from '../components/contact';
 
 // import in all the logos.
-import SpiritedFeet from "../layouts/images/client/spiritedfeet.png";
-import messagecab from "../layouts/images/client/messageCab.png";
-import applebarn from "../layouts/images/client/applebarn.png";
+import SpiritedFeet from '../layouts/images/client/spiritedfeet.png';
+import messagecab from '../layouts/images/client/messageCab.png';
+import applebarn from '../layouts/images/client/applebarn.png';
 
 const IndexPage = () => (
   <main className="fullwidth">
@@ -49,9 +49,9 @@ const IndexPage = () => (
         </p>
       </ProjectCard>
     </div>
-    <Link to="/portfolio" className="portfolioLink">
+    {/* <Link to="/portfolio" className="portfolioLink">
       View all Case Studies
-    </Link>
+    </Link> */}
     <h2 className="title">Contact Me</h2>
     <p>
       This is where a paragraph about me and how my services work will go. Right
