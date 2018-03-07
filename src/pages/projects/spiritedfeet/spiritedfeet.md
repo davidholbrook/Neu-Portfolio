@@ -3,7 +3,6 @@ path: '/project/spiritedfeet'
 title: 'Spirited Feet'
 role: 'Designer and Developer'
 url: 'http://spiritedfeet.com'
-bgColor: '#142440'
 ---
 
 ## Overview
@@ -18,7 +17,7 @@ They came to me through a mutual referral to help update their outdated website.
 
 ## Design Process
 
-Being both designer and developer on this project, I was able to control the look and feel of the website. Having a family member who teaches grade school and a history of working with children. Because of this, I was able to skip some of the normal research and start sketching instead.
+Being both designer and developer on this project, I was able to control the look and feel of the website. Having a family member who teaches grade school and a history of working with children. Because of this, I was able to get a head start on the normal research process by using my own experence, and ideas gathered by others.
 
 ![Notebook sketch](./notebook.png "Notebook Sketch")
 
@@ -38,7 +37,7 @@ Some key development points that I ran into were:
 
 The first challenge was creating a one-page cohesive webpage. There were a few different approaches for this, I finally decided on the many to one solution though.
 
-This worked by creating every section as its own Wordpress page. This had many benefits including tider organization and better references. After going through and creating all the pages one by one. I was able to use a custom WordPress loop that finds the pages and concatenate them into one page.
+This worked by creating every section as its own Wordpress page. This had many benefits including cleaner organization and better references. After going through and creating all the pages one by one. I was able to use a custom WordPress loop that finds the pages and concatenate them into one page.
 
 ![Sticky Navagation](./navstick.png "Sticky Navagation")
 
@@ -48,7 +47,23 @@ The next challenge that awaited me was creating a menu that followed the user do
 
 Using the Waypoints library, I was able to use a landmark on the website to trigger an element change. This happens when the user scroll past the header, a second state would happen. This second state would follow the user down the rest of the page until they scrolled back to the header.
 
-One problem is that the Themify Builder would not corporate well with jQuery I was using for this effect. As Waypoints was not a dependant of jQuery, I was able to custom develop my own solution for this problem.
+One problem is that the Themify Builder would not corporate well with the jQuery I was using for this effect. To fix this effect I used Waypoints with generic javascript to build the effect in a non-conflicting way.
+
+```js
+    var waypoint = new Waypoint({
+	    element: document.getElementsByClassName('about'),
+			handler: function(direction) {
+			var scrollNav =  document.getElementById('scrollNav');
+			if(direction === 'down'){
+				scrollNav.setAttribute('class', 'scroll-is-shown');
+			}
+			if(direction === 'up'){
+				scrollNav.setAttribute('class', 'scrollnav');
+			}
+		    },
+			    offset: '5%'
+		})
+```
 
 ### Themify Builder
 

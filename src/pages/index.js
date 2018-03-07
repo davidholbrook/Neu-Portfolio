@@ -1,12 +1,13 @@
-import React from 'react';
-import Link from 'gatsby-link';
+import React from "react";
+import Link from "gatsby-link";
 
-import ProjectCard from '../components/ProjectCard';
-import Contact from '../components/contact';
+import ProjectCard from "../components/ProjectCard";
+import Contact from "../components/contact";
 
 // import in all the logos.
-import SpiritedFeet from '../layouts/images/client/spiritedfeet.png';
-import messagecab from '../layouts/images/client/messageCab.png';
+import SpiritedFeet from "../layouts/images/client/spiritedfeet.png";
+import messagecab from "../layouts/images/client/messageCab.png";
+import applebarn from "../layouts/images/client/applebarn.png";
 
 const IndexPage = () => (
   <main className="fullwidth">
@@ -19,9 +20,10 @@ const IndexPage = () => (
       >
         <h2>Spirited Feet</h2>
         <p>
-          Spirited Feet is a Christian dance company based in Woodbury,
-          Minnesota. I was approached by them with the challenge of redesigning
-          their old website using WordPress as the management system.
+          Spirited Feet is a dancing organization based in Woodbury, Minnesota.
+          Their mission is to teach dance and Christ in a non-competitive dance
+          environment. They teach dance and choreography to grades 3 through 12
+          and offered many nights a week.
         </p>
       </ProjectCard>
       <ProjectCard
@@ -37,30 +39,26 @@ const IndexPage = () => (
           audience with his product.
         </p>
       </ProjectCard>
+      <ProjectCard logo={applebarn} bgColor="#981B38" link="project/applebarn">
+        <h2>Apple Barn Orchard and Winery</h2>
+        <p>
+          Apple Barn is a family owned farm located in Elkhorn, Wisconsin. They
+          specialize in fresh Strawberries, Pumpkins and many different
+          varieties of apples. Families can come to the farm and expect a fun
+          experience of picking up the freshest fruit.
+        </p>
+      </ProjectCard>
     </div>
     <Link to="/portfolio" className="portfolioLink">
       View all Case Studies
     </Link>
     <h2 className="title">Contact Me</h2>
+    <p>
+      This is where a paragraph about me and how my services work will go. Right
+      now this form goes nowhere, sorry.
+    </p>
     <Contact />
   </main>
 );
 
 export default IndexPage;
-
-export const query = graphql`
-  query something {
-    allMarkdownRemark {
-      edges {
-        node {
-          frontmatter {
-            title
-            path
-            role
-          }
-          excerpt
-        }
-      }
-    }
-  }
-`;

@@ -1,36 +1,35 @@
-import React, { Component } from 'react';
-import PropTypes from 'prop-types';
-import Helmet from 'react-helmet';
+import React, { Component } from "react";
+import PropTypes from "prop-types";
+import Helmet from "react-helmet";
 
-import Header from '../components/Header';
-import AboutMe from '../components/About';
-import Footer from '../components/Footer';
-import './_scss/index.scss';
+import Header from "../components/Header";
+import AboutMe from "../components/About";
+import Footer from "../components/Footer";
+import "./_scss/index.scss";
 
 /* eslint-disable */
 class TemplateWrapper extends Component {
   static propTypes = {
-    children: PropTypes.func,
+    children: PropTypes.func
   };
+
   render() {
-    if (this.props.location.pathname == '/') {
+    if (this.props.location.pathname == "/") {
       return (
         <div>
           <Helmet
             title="David Holbrook"
             meta={[
-        { charSet: 'utf-8' },
-        { name: 'description', content: 'Sample' },
-        { name: 'keywords', content: 'sample, something' },
-      ]}
+              { charSet: "utf-8" },
+              { name: "description", content: "Sample" },
+              { name: "keywords", content: "sample, something" }
+            ]}
           />
           <div className="background">
             <Header />
             <AboutMe />
           </div>
-          <div>
-            {this.props.children()}
-          </div>
+          <div>{this.props.children()}</div>
           <Footer />
         </div>
       );
@@ -40,22 +39,19 @@ class TemplateWrapper extends Component {
         <Helmet
           title="David Holbrook"
           meta={[
-              { charSet: 'utf-8' },
-              { name: 'description', content: 'Sample' },
-              { name: 'keywords', content: 'sample, something' },
-            ]}
+            { charSet: "utf-8" },
+            { name: "description", content: "Sample" },
+            { name: "keywords", content: "sample, something" }
+          ]}
         />
         <div className="background--black">
           <Header />
         </div>
-        <div>
-          {this.props.children()}
-        </div>
+        <div>{this.props.children()}</div>
         <Footer />
       </div>
     );
   }
 }
-
 
 export default TemplateWrapper;

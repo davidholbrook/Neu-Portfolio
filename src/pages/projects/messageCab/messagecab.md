@@ -3,6 +3,7 @@ path: '/project/messagecab'
 title: 'Message Cab'
 role: 'Developer'
 bgColor: '#221f20'
+logo: 'SpiritedFeet'
 ---
 
 ## Overview
@@ -13,7 +14,7 @@ Selling cards and posters were the dream for a client of mine as a side business
 
 ## Collaboration
 
-Listening to the client, I started giving advice based on my many years of experience. This advice included things like the best shopping solution for the website. For this I suggested FoxyCart but we ended with WooComerance since it came with the theme. The next topic was the best way to host the website. I recommended SiteGround, but the client had another solution in mind. Finally, we spoke of the experience of shopping, I gave my past experiences and we created a flow from there.
+Listening to the client, I started giving advice based on my many years of experience. This advice included things like the best shopping solution for the website. For this I suggested FoxyCart but we ended with WooCommerce since it came with the theme. The next topic was the best way to host the website. I recommended SiteGround, but the client had another solution in mind. Finally, we spoke of the experience of shopping, I gave my past experiences and we created a flow from there.
 
 ![Concept for Message Cab](./titlescreen.png "Concept for Message Cab")
 
@@ -29,6 +30,6 @@ From there I started working on the website itself. I used Wordpress as the back
 
 ## Documentation and Wrap Up
 
-Once all the modifications and setup was complete. I took two weeks to build a user manual for the client, using Git Books. This manual went over backend operations, the visual styles used, and core operations. A part of this manual was also written for future developers. This was in case there was an upgrade or latency issue and I was unable to perform.
+Once all the modifications and setup was complete. I took two weeks to build a user manual for the client, using Git Books. This manual went over backend operations, the visual styles used, and core operations. A part of this manual was also written for future developers. This was in case there was an problem I was unavailable to assist with.
 
 This website was unable to stay alive for long due to limited stock and hosting problems. I have spoken to the client many times of a stronger solution and a solution in the future.
