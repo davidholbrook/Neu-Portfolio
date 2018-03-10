@@ -1,11 +1,11 @@
-import React, { Component } from "react";
-import PropTypes from "prop-types";
-import Helmet from "react-helmet";
+import React, { Component } from 'react';
+import PropTypes from 'prop-types';
+import Helmet from 'react-helmet';
 
-import Header from "../components/Header";
-import AboutMe from "../components/About";
-import Footer from "../components/Footer";
-import "./_scss/index.scss";
+import Header from '../components/Header';
+import AboutMe from '../components/About';
+import Footer from '../components/Footer';
+import './_scss/index.scss';
 
 /* eslint-disable */
 class TemplateWrapper extends Component {
@@ -21,8 +21,12 @@ class TemplateWrapper extends Component {
             title="David Holbrook"
             meta={[
               { charSet: "utf-8" },
-              { name: "description", content: "Sample" },
-              { name: "keywords", content: "sample, something" }
+              {
+                name: "description",
+                content:
+                  "The personal portfolio of Minneapolis developer David Holbrook"
+              },
+              { name: "keywords", content: "portfolio, front-end developer" }
             ]}
           />
           <div className="background">
@@ -40,8 +44,12 @@ class TemplateWrapper extends Component {
           title="David Holbrook"
           meta={[
             { charSet: "utf-8" },
-            { name: "description", content: "Sample" },
-            { name: "keywords", content: "sample, something" }
+            {
+              name: "description",
+              content:
+                "The personal portfolio of Minneapolis developer David Holbrook"
+            },
+            { name: "keywords", content: "portfolio, front-end developer" }
           ]}
         />
         <div className="background--black">
