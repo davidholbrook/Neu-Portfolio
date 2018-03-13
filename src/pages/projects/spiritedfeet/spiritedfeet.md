@@ -3,6 +3,7 @@ path: '/project/spiritedfeet'
 title: 'Spirited Feet'
 role: 'Designer and Developer'
 url: 'http://spiritedfeet.com'
+bgColor: '#142440'
 ---
 
 ## Overview
@@ -50,19 +51,19 @@ Using the Waypoints library, I was able to use a landmark on the website to trig
 One problem is that the Themify Builder would not corporate well with the jQuery I was using for this effect. To fix this effect I used Waypoints with generic javascript to build the effect in a non-conflicting way.
 
 ```js
-    var waypoint = new Waypoint({
-	    element: document.getElementsByClassName('about'),
-			handler: function(direction) {
-			var scrollNav =  document.getElementById('scrollNav');
-			if(direction === 'down'){
-				scrollNav.setAttribute('class', 'scroll-is-shown');
-			}
-			if(direction === 'up'){
-				scrollNav.setAttribute('class', 'scrollnav');
-			}
-		    },
-			    offset: '5%'
-		})
+var waypoint = new Waypoint({
+  element: document.getElementsByClassName("about"),
+  handler: function(direction) {
+    var scrollNav = document.getElementById("scrollNav");
+    if (direction === "down") {
+      scrollNav.setAttribute("class", "scroll-is-shown");
+    }
+    if (direction === "up") {
+      scrollNav.setAttribute("class", "scrollnav");
+    }
+  },
+  offset: "5%"
+});
 ```
 
 ### Themify Builder

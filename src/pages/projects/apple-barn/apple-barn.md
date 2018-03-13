@@ -3,6 +3,7 @@ path: '/project/applebarn'
 title: 'Apple Barn Orchard and Winery'
 role: 'Developer'
 url: 'http://applebarnorchardandwinery.com/'
+bgColor: '#981B38'
 ---
 
 ## Overview

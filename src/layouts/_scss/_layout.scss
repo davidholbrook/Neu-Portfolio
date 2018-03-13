@@ -1,32 +1,39 @@
-$fira:  'Fira Sans', Verdana, Geneva, Tahoma, sans-serif;
-$Crimson: 'Crimson Text', Georgia, 'Times New Roman', Times, serif;
+$fira: "Fira Sans", Verdana, Geneva, Tahoma, sans-serif;
+$Crimson: "Crimson Text", Georgia, "Times New Roman", Times, serif;
 
-body{
-    font-size: 140%;
-    line-height: 1.45;
-    font-family: 'Crimson Text', Georgia, 'Times New Roman', Times, serif;
-    @media(max-width: 1150px){
-        font-size: 100%;
-    }
+body {
+  font-size: 140%;
+  line-height: 1.45;
+  font-family: "Crimson Text", Georgia, "Times New Roman", Times, serif;
+  @media (max-width: 1150px) {
+    font-size: 100%;
+  }
 }
 
-a:link, a:visited{
-    color: #555555;
-    text-decoration-skip-ink: auto;
+a:link,
+a:visited {
+  color: #555555;
+  text-decoration-skip-ink: auto;
 }
 
-a:hover, a:active{
-    color: #555555;
-    text-decoration-skip-ink: auto;
+a:hover,
+a:active {
+  color: #555555;
+  text-decoration-skip-ink: auto;
 }
 
-p {margin-bottom: 1.3em;}
+p {
+  margin-bottom: 1.3em;
+}
 
-h1, h2, h3, h4 {
+h1,
+h2,
+h3,
+h4 {
   margin: 1.414em 0 0.5em;
   font-weight: inherit;
   line-height: 1.2;
-  font-family: $fira
+  font-family: $fira;
 }
 
 h1 {
@@ -34,200 +41,210 @@ h1 {
   font-size: 2.441em;
 }
 
-h2 {font-size: 1.953em;}
-
-h3 {font-size: 1.563em;}
-
-h4 {font-size: 1.25em;}
-
-small, .font_small {font-size: 0.8em;}
-
-.title{
-    border-bottom: 1px solid #d9d5de;
+h2 {
+  font-size: 1.953em;
 }
 
-.background{
-    background: #000000 url('../images/background.jpg') fixed;
-    background-size: cover;
-    padding: 2rem 2.77rem;
-    margin-bottom: 2rem;
+h3 {
+  font-size: 1.563em;
 }
 
-.mainHead{
-    font-family: $fira;
-
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-.logo{
-    margin: 30px 0;
-}
-.mainNav{
-    display: flex;
-    li{
-        list-style: none;
-        margin: -40px 10px;
-    }
-    a{
-        color: #ffffff;
-        text-decoration: none;
-        font-weight: lighter;
-        font-size: 1.5rem;
-        text-transform: uppercase;
-    }
-    @media(max-width: 570px){
-        display: none;
-    }
-}
-.background--black{
-    background: #000000;
-    padding: 0rem 2.77rem;
-    margin-bottom: 2rem;
-    .logo{
-        margin: 20px 0 10px 0;
-    }
-    li{
-        margin: -20px 10px;
-    }
-}
-.intro{
-    color: #ffffff;
-    font-family: $fira;
-    font-size: 1.5rem;
-    line-height: 2.5rem;
-    font-weight: lighter;
-    text-transform: uppercase;
-
-    max-width: 500px;
-
-    @media (max-width: 570px) {
-        font-size: 1rem;
-        line-height: 2rem;;
-    }
-
+h4 {
+  font-size: 1.25em;
 }
 
-.aboutLink{
-    color: rgba(#ffffff, .5);
-    font-family: $fira;
-    text-decoration: none;
-    text-transform: uppercase;
-
-    display: inline-block;
-    border: 2px rgba(#ffffff, .5) solid;
-    border-radius: 10px;
-    padding: 10px;
-
-    @media (max-width: 570px) {
-        font-size: 1rem;
-        line-height: 2rem;
-    }
+small,
+.font_small {
+  font-size: 0.8em;
 }
 
-.portfolioLink, button[type="submit"]{
-    color: rgba(#000000, .5);
-    font-family: $fira;
-    font-size: 1.5rem;
-    text-decoration: none;
-    text-transform: uppercase;
-    text-align: center;
-    font-weight: 400;
-
-    display: block;
-    border: 3px solid rgba(#000000, .5);
-    padding: 1rem;
-    grid-column: span 2;
-
-    transition: all 320ms ease-in-out;
-
-    &:hover{
-        background: #7f7f7f;
-        color: #ffffff !important;
-    }
-
-    @media (max-width: 570px) {
-        font-size: 1rem;
-        line-height: 2rem;
-    }
+.title {
+  border-bottom: 1px solid #d9d5de;
 }
 
-label{
-    display: block;
-    font-family: $fira;
-    font-weight: 300;
-    font-size: 1rem;
-
-    margin: .5rem 0;
+.background {
+  background: #000000 url("../images/background.jpg") fixed;
+  background-size: cover;
+  padding: 2rem 2.77rem;
+  margin-bottom: 2rem;
 }
 
-input, textarea{
-    font-family: $fira;
-    font-weight: 300;
-    color: #555555;
-    font-size: 1rem;
+.mainHead {
+  font-family: $fira;
 
-    border: 1px #000000 solid;
-    width: 90vw;
-    padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
-
-textarea{
-    width: 90vw;
-    height: 8rem;
+.logo {
+  margin: 30px 0;
 }
-
-button[type="submit"]{
-    width: 91.7vw;
-    margin-top: 2rem;
-}
-
-main{
-    padding: 0 30rem 0 2rem;
-    @media(max-width: 1150px){
-        padding: 0 2rem;
-    }
-}
-main.fullwidth{
-    padding: 0 2rem;
-}
-main.grid{
-    padding: 0 2rem;
-    display: grid;
-    grid-template-columns: 200px 1fr;
-    grid-template-areas: "meta children";
-    grid-gap: 2rem;
-}
-
-.mainFooter{
-    font-size: 1rem;
-    color: #ffffff;
-    font-family: $fira;
-
-    background: #000000;
-    padding: 1.5rem;
-    margin-top: 2rem;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-
-    a{
-        color: rgba(#ffffff, .8);
-    }
-
-    @media(max-width: 570px){
-        font-size: .5rem;
-    }
-}
-
-.Footer__socials{
+.mainNav {
+  display: flex;
+  li {
     list-style: none;
-    display: flex;
-    margin-left: -40px;
-    li{
-        margin: 0 2rem;
-        a{
-            text-decoration: none;
-        }
+    margin: -40px 10px;
+  }
+  a {
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: lighter;
+    font-size: 1.5rem;
+    text-transform: uppercase;
+  }
+  @media (max-width: 570px) {
+    display: none;
+  }
+}
+.background--black {
+  background: #000000;
+  padding: 0rem 2.77rem;
+  margin-bottom: 2rem;
+  .logo {
+    margin: 20px 0 10px 0;
+  }
+  li {
+    margin: -20px 10px;
+  }
+}
+.intro {
+  color: #ffffff;
+  font-family: $fira;
+  font-size: 1.5rem;
+  line-height: 2.5rem;
+  font-weight: lighter;
+  text-transform: uppercase;
+
+  max-width: 500px;
+
+  @media (max-width: 570px) {
+    font-size: 1rem;
+    line-height: 2rem;
+  }
+}
+
+.aboutLink {
+  color: rgba(#ffffff, 0.5);
+  font-family: $fira;
+  text-decoration: none;
+  text-transform: uppercase;
+
+  display: inline-block;
+  border: 2px rgba(#ffffff, 0.5) solid;
+  border-radius: 10px;
+  padding: 10px;
+
+  @media (max-width: 570px) {
+    font-size: 1rem;
+    line-height: 2rem;
+  }
+}
+
+.portfolioLink,
+button[type="submit"] {
+  color: rgba(#000000, 0.5);
+  font-family: $fira;
+  font-size: 1.5rem;
+  text-decoration: none;
+  text-transform: uppercase;
+  text-align: center;
+  font-weight: 400;
+
+  display: block;
+  border: 3px solid rgba(#000000, 0.5);
+  padding: 1rem;
+  grid-column: span 2;
+
+  transition: all 320ms ease-in-out;
+
+  &:hover {
+    background: #7f7f7f;
+    color: #ffffff !important;
+  }
+
+  @media (max-width: 570px) {
+    font-size: 1rem;
+    line-height: 2rem;
+  }
+}
+
+label {
+  display: block;
+  font-family: $fira;
+  font-weight: 300;
+  font-size: 1rem;
+
+  margin: 0.5rem 0;
+}
+
+input,
+textarea {
+  font-family: $fira;
+  font-weight: 300;
+  color: #555555;
+  font-size: 1rem;
+
+  border: 1px #000000 solid;
+  width: 90vw;
+  padding: 10px;
+}
+
+textarea {
+  width: 90vw;
+  height: 8rem;
+}
+
+button[type="submit"] {
+  width: 91.7vw;
+  margin-top: 2rem;
+}
+
+main {
+  padding: 0 30rem 0 2rem;
+  @media (max-width: 1150px) {
+    padding: 0 2rem;
+  }
+}
+main.fullwidth {
+  padding: 0 2rem;
+}
+main.grid {
+  padding: 0 2rem;
+  display: grid;
+  grid-template-columns: 200px 35rem;
+  grid-template-areas: "meta children";
+  grid-gap: 3rem;
+}
+
+.mainFooter {
+  font-size: 1rem;
+  color: #ffffff;
+  font-family: $fira;
+
+  background: #000000;
+  padding: 1.5rem;
+  margin-top: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  a {
+    color: rgba(#ffffff, 0.8);
+  }
+
+  @media (max-width: 570px) {
+    font-size: 0.5rem;
+  }
+}
+
+.Footer__socials {
+  list-style: none;
+  display: flex;
+  margin-left: -40px;
+  li {
+    margin: 0 2rem;
+    a {
+      text-decoration: none;
     }
+  }
 }

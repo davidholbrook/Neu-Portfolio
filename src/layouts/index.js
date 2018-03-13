@@ -38,23 +38,10 @@ class TemplateWrapper extends Component {
         </div>
       );
     }
+
     return (
       <div>
-        <Helmet
-          title="David Holbrook"
-          meta={[
-            { charSet: "utf-8" },
-            {
-              name: "description",
-              content:
-                "The personal portfolio of Minneapolis developer David Holbrook"
-            },
-            { name: "keywords", content: "portfolio, front-end developer" }
-          ]}
-        />
-        <div className="background--black">
-          <Header />
-        </div>
+        <Helmet title={"David Holbrook"} />
         <div>{this.props.children()}</div>
         <Footer />
       </div>
