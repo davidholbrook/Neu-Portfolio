@@ -43,7 +43,6 @@ class TemplateWrapper extends Component {
       <div>
         <Helmet title={"David Holbrook"} />
         <div>{this.props.children()}</div>
-        <Footer />
       </div>
     );
   }

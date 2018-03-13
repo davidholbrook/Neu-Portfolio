@@ -6,8 +6,11 @@ import Github from "../../layouts/images/socials/Github";
 import Twitter from "../../layouts/images/socials/Twitter";
 import Codepen from "../../layouts/images/socials/Codepen";
 
-const Footer = () => (
-  <div className="mainFooter">
+const Footer = ({ data }) => (
+  <div
+    className="mainFooter"
+    style={{ backgroundColor: data.markdownRemark.frontmatter.bgColor }}
+  >
     <p>
       {}
       &copy; 2018 David Holbrook. Made with{" "}

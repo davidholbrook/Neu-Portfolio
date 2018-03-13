@@ -2,6 +2,7 @@ import React from 'react';
 import Helmet from 'react-helmet';
 import Link from 'gatsby-link';
 import Header from '../components/Header';
+import Footer from '../components/Footer/project-footer.js';
 
 export default function Template({ data }) {
   const { markdownRemark: project } = data;
@@ -36,6 +37,7 @@ export default function Template({ data }) {
           className="Project__children"
         />
       </main>
+      <Footer data={data} />
     </div>
   );
 }

@@ -2,6 +2,7 @@ import React from 'react';
 
 import ProjectCard from '../components/ProjectCard';
 import Header from '../components/Header';
+import Footer from '../components/Footer';
 
 // import in all the logos.
 import SpiritedFeet from '../layouts/images/client/spiritedfeet.png';
@@ -43,6 +44,7 @@ const Portfolio = () => (
         </ProjectCard>
       </div>
     </main>
+    <Footer />
   </div>
 );
 

@@ -1,6 +1,7 @@
 import React from 'react';
 import Link from 'gatsby-link';
 import Header from '../components/Header';
+import Footer from '../components/Footer';
 
 const AboutDavid = () => (
   <div>
@@ -19,6 +20,7 @@ const AboutDavid = () => (
         for your next thing, email me at david@davidholbrook.info.
       </p>
     </main>
+    <Footer />
   </div>
 );
 
