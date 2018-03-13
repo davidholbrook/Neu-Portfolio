@@ -2,7 +2,7 @@
 path: '/project/messagecab'
 title: 'Message Cab'
 role: 'Developer'
-bgColor: '#fbb03f'
+bgColor: '#b07b2c'
 ---
 
 ## Overview

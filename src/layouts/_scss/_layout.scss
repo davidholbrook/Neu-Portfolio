@@ -226,7 +226,11 @@ main.grid {
   margin-top: 2rem;
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: right;
+
+  p {
+    margin: 0.5rem;
+  }
 
   a {
     color: rgba(#ffffff, 0.8);
@@ -242,9 +246,12 @@ main.grid {
   display: flex;
   margin-left: -40px;
   li {
-    margin: 0 2rem;
+    margin: 0 1rem;
     a {
       text-decoration: none;
+    }
+    &:last-child {
+      margin-right: 0px;
     }
   }
 }

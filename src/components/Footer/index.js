@@ -1,17 +1,17 @@
-import React from "react";
-import Link from "gatsby-link";
+import React from 'react';
+import Link from 'gatsby-link';
 
-import Linkedin from "../../layouts/images/socials/Linkedin";
-import Github from "../../layouts/images/socials/Github";
-import Twitter from "../../layouts/images/socials/Twitter";
-import Codepen from "../../layouts/images/socials/Codepen";
+import Linkedin from '../../layouts/images/socials/Linkedin';
+import Github from '../../layouts/images/socials/Github';
+import Twitter from '../../layouts/images/socials/Twitter';
+import Codepen from '../../layouts/images/socials/Codepen';
 
 const Footer = () => (
   <div className="mainFooter">
     <p>
       {}
-      &copy; 2018 David Holbrook. Made with{" "}
-      <Link to="https://www.gatsbyjs.org/">Gatsby JS</Link> and{" "}
+      &copy; 2018 David Holbrook. Made with{' '}
+      <Link to="https://www.gatsbyjs.org/">Gatsby JS</Link> and{' '}
       <Link to="https://reactjs.org/">React</Link>.
     </p>
     <ul className="Footer__socials">
