@@ -16,6 +16,7 @@
     "gatsby-remark-images": "^1.5.47",
     "gatsby-source-filesystem": "^1.5.20",
     "gatsby-transformer-remark": "^1.7.33",
+    "invert-color": "^1.2.2",
     "nprogress": "^0.2.0",
     "prop-types": "^15.6.0",
     "react": "^16.2.0",
