@@ -7,7 +7,7 @@ const AboutDavid = () => (
   <div>
     <div className="background--about">
       <Header />
-      <main>
+      <div className="content">
         <h2>Write Code. Build Businesses.</h2>
         <p>
           Hi, I'm Dave, a front-end designer from Minneapolis, Minnesota. I have
@@ -19,6 +19,7 @@ const AboutDavid = () => (
           Let me know what I can do for your next thing, email me at
           david@davidholbrook.info.
         </p>
+
         <div className="about__graphic">
           <span className="clients">
             <strong>14</strong>
@@ -33,7 +34,7 @@ const AboutDavid = () => (
             Projects Launched
           </span>
         </div>
-      </main>
+      </div>
     </div>
     <Footer />
   </div>
