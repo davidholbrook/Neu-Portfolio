@@ -1,7 +1,7 @@
-import React from "react";
-import Link from "gatsby-link";
-import Header from "../components/Header";
-import Footer from "../components/Footer";
+import React from 'react';
+import Link from 'gatsby-link';
+import Header from '../components/Header';
+import Footer from '../components/Footer';
 
 const AboutDavid = () => (
   <div>
@@ -19,6 +19,20 @@ const AboutDavid = () => (
           Let me know what I can do for your next thing, email me at
           david@davidholbrook.info.
         </p>
+        <div className="about__graphic">
+          <span className="clients">
+            <strong>14</strong>
+            Diffrent Clients
+          </span>
+          <span className="clients">
+            <strong>10</strong>
+            Years of Experence
+          </span>
+          <span className="clients">
+            <strong>15</strong>
+            Projects Launched
+          </span>
+        </div>
       </main>
     </div>
     <Footer />

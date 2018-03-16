@@ -1,54 +1,54 @@
-$fira:  'Fira Sans', Verdana, Geneva, Tahoma, sans-serif;
-$Crimson: 'Crimson Text', Georgia, 'Times New Roman', Times, serif;
+$fira: "Fira Sans", Verdana, Geneva, Tahoma, sans-serif;
+$Crimson: "Crimson Text", Georgia, "Times New Roman", Times, serif;
 
-.ProjectCard__wrapper{
+.ProjectCard__wrapper {
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-gap: 2rem;
   margin-bottom: 2rem;
 
-  @media (max-width:1060px) {
+  @media (max-width: 1060px) {
     grid-template-columns: 1fr;
   }
 }
-.ProjectCard{
+.ProjectCard {
   background-color: #e3dfd9;
   border: solid 1px #c2bcb2;
   display: flex;
-  @media (max-width: 560px){
+  @media (max-width: 560px) {
     flex-direction: column;
   }
 }
 
-.ProjectCard__background{
+.ProjectCard__background {
   width: 300px;
   height: 1fr;
   margin-right: 1.11rem;
   display: flex;
   align-items: center;
   justify-content: center;
-  img{
+  img {
     padding: 1rem;
   }
-  @media (max-width: 560px){
+  @media (max-width: 560px) {
     width: 100%;
   }
 }
 
-.ProjectCard__children{
+.ProjectCard__children {
   flex-direction: column;
   padding-right: 1.5rem;
-  h2{
+  h2 {
     margin-top: 1.5rem;
     text-transform: uppercase;
   }
-  @media (max-width: 560px){
+  @media (max-width: 560px) {
     text-align: center;
-    padding: 0 1rem;;
+    padding: 0 1rem;
   }
 }
 
-.ProjectCard__btn{
+.ProjectCard__btn {
   color: #ffffff !important;
   font-family: $fira;
   text-decoration: none;
@@ -58,44 +58,67 @@ $Crimson: 'Crimson Text', Georgia, 'Times New Roman', Times, serif;
   margin-bottom: 2rem;
 }
 
-.Project__meta{
+.Project__meta {
   grid-area: meta;
 
-  h3{
+  h3 {
     font-size: 1.2rem;
   }
 
-  p{
+  p {
     font-size: 1rem;
   }
 
-&.scroll-is-shown{
-  color: #cccccc;
+  &.scroll-is-shown {
+    color: #cccccc;
 
-  position: fixed;
-  width: 200px;
-  top: 0;
-  left: 2rem;
+    position: fixed;
+    width: 200px;
+    top: 0;
+    left: 2rem;
 
-  .Project__title{
-    border-top-color: #cccccc;
-    border-bottom-color: #cccccc;
+    .Project__title {
+      border-top-color: #cccccc;
+      border-bottom-color: #cccccc;
+    }
   }
-
-}
 }
 
-.Project__title{
-    text-transform: uppercase;
+.Project__title {
+  text-transform: uppercase;
 
-    border-top: 3px solid black;
-    border-bottom: 3px solid #000;
-    padding: 10px;
-  }
+  border-top: 3px solid black;
+  border-bottom: 3px solid #000;
+  padding: 10px;
+}
 
-.Project__children{
+.Project__children {
   grid-area: children;
-  img{
+  img {
     border: 5px solid #000000;
+  }
+}
+
+.about__graphic {
+  border: 0.5rem rgba(white, 0.5) solid;
+  border-radius: 10px;
+
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  justify-content: center;
+
+  span {
+    display: flex;
+    flex-direction: column;
+    padding: 2vw;
+    font-family: $fira;
+    justify-content: flex-start;
+    align-items: center;
+    text-align: center;
+
+    strong {
+      display: block;
+      font-size: 5vw;
+    }
   }
 }
