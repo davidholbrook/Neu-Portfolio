@@ -7,6 +7,7 @@ import Footer from '../components/Footer';
 // import in all the logos.
 import SpiritedFeet from '../layouts/images/client/spiritedfeet.png';
 import messagecab from '../layouts/images/client/messageCab.png';
+import applebarn from '../layouts/images/client/applebarn.png';
 
 const Portfolio = () => (
   <div>
@@ -17,16 +18,16 @@ const Portfolio = () => (
       <h2 className="title">All Projects</h2>
       <div className="ProjectCard__wrapper">
         <ProjectCard
-          logo={SpiritedFeet}
-          bgColor="#142440"
-          link="project/spiritedfeet"
+          logo={applebarn}
+          bgColor="#981B38"
+          link="project/applebarn"
         >
-          <h2>Spirited Feet</h2>
+          <h2>Apple Barn Orchard and Winery</h2>
           <p>
-            Spirited Feet is a Christian dance company based in Woodbury,
-            Minnesota. I was approached by them with the challenge of
-            redesigning their old website using WordPress as the management
-            system.
+            Apple Barn is a family owned farm located in Elkhorn, Wisconsin.
+            They specialize in fresh Strawberries, Pumpkins and many different
+            varieties of apples. Families can come to the farm and expect a fun
+            experience of picking up the freshest fruit.
           </p>
         </ProjectCard>
         <ProjectCard
@@ -40,6 +41,19 @@ const Portfolio = () => (
             side business. The client had the idea for the website and the
             inventory to sell. He needed my technical skills to reach a global
             audience with his product.
+          </p>
+        </ProjectCard>
+        <ProjectCard
+          logo={SpiritedFeet}
+          bgColor="#142440"
+          link="project/spiritedfeet"
+        >
+          <h2>Spirited Feet</h2>
+          <p>
+            Spirited Feet is a Christian dance company based in Woodbury,
+            Minnesota. I was approached by them with the challenge of
+            redesigning their old website using WordPress as the management
+            system.
           </p>
         </ProjectCard>
       </div>

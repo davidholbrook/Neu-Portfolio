@@ -14,14 +14,18 @@ $Crimson: "Crimson Text", Georgia, "Times New Roman", Times, serif;
 .ProjectCard {
   background-color: #e3dfd9;
   border: solid 1px #c2bcb2;
-  display: flex;
+  display: grid;
+  grid-template-columns: 300px 1fr;
   @media (max-width: 560px) {
+    display: flex;
     flex-direction: column;
+  }
+  @media (min-width: 1060px) {
+    grid-template-columns: 200px 1fr;
   }
 }
 
 .ProjectCard__background {
-  width: 300px;
   height: 1fr;
   margin-right: 1.11rem;
   display: flex;
@@ -29,6 +33,10 @@ $Crimson: "Crimson Text", Georgia, "Times New Roman", Times, serif;
   justify-content: center;
   img {
     padding: 1rem;
+    @media (min-width: 1060px) {
+      padding: 0.5rem;
+      width: 80%;
+    }
   }
   @media (max-width: 560px) {
     width: 100%;
@@ -38,9 +46,11 @@ $Crimson: "Crimson Text", Georgia, "Times New Roman", Times, serif;
 .ProjectCard__children {
   flex-direction: column;
   padding-right: 1.5rem;
+  font-size: 1rem;
   h2 {
     margin-top: 1.5rem;
     text-transform: uppercase;
+    font-size: 1.7rem;
   }
   @media (max-width: 560px) {
     text-align: center;
@@ -121,4 +131,47 @@ $Crimson: "Crimson Text", Georgia, "Times New Roman", Times, serif;
       font-size: 5vw;
     }
   }
+}
+
+.ProjectFeat {
+  color: #ffffff;
+
+  display: grid;
+  grid-template-columns: 200px 1fr;
+  grid-gap: 2rem;
+  padding: 2rem;
+  justify-content: space-around;
+  align-items: center;
+
+  @media (max-width: 560px) {
+    display: flex;
+    flex-direction: column;
+  }
+
+  font-size: 1rem;
+  h2 {
+    margin-top: 0;
+    text-transform: uppercase;
+    font-size: 1.7rem;
+  }
+  @media (max-width: 560px) {
+    text-align: center;
+    padding: 0 1rem;
+  }
+}
+@media (max-width: 500px) {
+  .ProjectFeat__logo {
+    margin-bottom: 1.5rem;
+  }
+}
+.ProjectFeat__btn {
+  color: #ffffff !important;
+  font-family: $fira;
+  text-decoration: none;
+
+  display: inline-block;
+  padding: 10px 20px;
+  margin-bottom: 2rem;
+
+  border: 0.2rem solid rgba(#ffffff, 0.5);
 }
