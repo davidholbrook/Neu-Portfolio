@@ -68,6 +68,23 @@ small,
   padding: 2rem 2.77rem;
   margin-bottom: 2rem;
 }
+.background--about {
+  background: #000000 url("../images/background_about.jpg");
+  background-size: cover;
+  padding: 2rem 2.77rem;
+  margin-bottom: -2.1rem;
+
+  min-height: 100vh;
+
+  color: #fff;
+
+  h2 {
+    font-size: 6.2vw;
+  }
+  p {
+    font-size: 2.5vw;
+  }
+}
 
 .mainHead {
   font-family: $fira;
