@@ -43,9 +43,16 @@ module.exports = {
               linkImagesToOriginal: false,
             },
           },
+          {
+            resolve: 'gatsby-remark-prismjs',
+            options: {
+              classPrefix: 'language-',
+            },
+          },
         ],
       },
     },
+
     {
       resolve: 'gatsby-plugin-manifest',
       options: {
@@ -58,9 +65,5 @@ module.exports = {
       },
     },
     'gatsby-plugin-offline',
-    {
-      resolve: 'gatsby-plugin-nprogress',
-      color: 'tomato',
-    },
   ],
 };
