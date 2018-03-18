@@ -76,21 +76,8 @@ $Crimson: "Crimson Text", Georgia, "Times New Roman", Times, serif;
   }
 
   p {
-    font-size: 1rem;
-  }
-
-  &.scroll-is-shown {
-    color: #cccccc;
-
-    position: fixed;
-    width: 200px;
-    top: 0;
-    left: 2rem;
-
-    .Project__title {
-      border-top-color: #cccccc;
-      border-bottom-color: #cccccc;
-    }
+    font-size: 1.3rem;
+    word-wrap: break-word;
   }
 }
 
