@@ -3,7 +3,15 @@ import React from 'react';
 const Contact = () => (
   <div>
     <h4>Lets Talk:</h4>
-    <span>email: david@davidholbrook.info</span>
+    <form action="https://formspree.io/david@davidholbrook.info" method="POST">
+      <label htmlFor="name">Your Name:</label>
+      <input type="text" name="name" />
+      <label htmlFor="email">Your Email</label>
+      <input type="email" name="_replyto" />
+      <label htmlFor="message">Your Message</label>
+      <textarea name="message" />
+      <button type="submit"> Let's Talk </button>
+    </form>
   </div>
 );
 

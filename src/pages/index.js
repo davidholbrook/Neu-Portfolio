@@ -1,12 +1,12 @@
-import React from 'react';
-import Link from 'gatsby-link';
+import React from "react";
+import Link from "gatsby-link";
 
-import ProjectCard from '../components/ProjectCard/featured';
-import Contact from '../components/contact';
+import ProjectCard from "../components/ProjectCard/featured";
+import Contact from "../components/contact";
 
 // import in all the logos.
-import SpiritedFeet from '../layouts/images/client/spiritedfeet.png';
-import applebarn from '../layouts/images/client/applebarn.png';
+import SpiritedFeet from "../layouts/images/client/spiritedfeet.png";
+import applebarn from "../layouts/images/client/applebarn.png";
 
 const IndexPage = () => (
   <main className="fullwidth">
