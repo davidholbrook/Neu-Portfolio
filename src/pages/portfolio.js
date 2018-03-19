@@ -24,23 +24,11 @@ const Portfolio = () => (
         >
           <h2>Apple Barn Orchard and Winery</h2>
           <p>
-            Apple Barn is a family owned farm located in Elkhorn, Wisconsin.
-            They specialize in fresh Strawberries, Pumpkins and many different
-            varieties of apples. Families can come to the farm and expect a fun
-            experience of picking up the freshest fruit.
-          </p>
-        </ProjectCard>
-        <ProjectCard
-          logo={messagecab}
-          bgColor="#221f20"
-          link="project/messagecab"
-        >
-          <h2>Message Cab</h2>
-          <p>
-            Selling cards and posters were the dream for a client of mine as a
-            side business. The client had the idea for the website and the
-            inventory to sell. He needed my technical skills to reach a global
-            audience with his product.
+            Apple Barn is a family-owned farm located in Elkhorn, Wisconsin.
+            They specialize in fresh Strawberries, Pumpkins, many different
+            varieties of Apples, and wine. Families of all kinds can come to the
+            farm and expect a fun experience of picking up the freshest fruit
+            and sample great wine at the winery.
           </p>
         </ProjectCard>
         <ProjectCard
@@ -50,10 +38,10 @@ const Portfolio = () => (
         >
           <h2>Spirited Feet</h2>
           <p>
-            Spirited Feet is a Christian dance company based in Woodbury,
-            Minnesota. I was approached by them with the challenge of
-            redesigning their old website using WordPress as the management
-            system.
+            Spirited Feet is a dance organization based in Woodbury, Minnesota.
+            Their mission is to teach dance and christian teaching in a
+            non-competitive environment. They teach grades 3 through 12 and
+            offer classes many nights a week.
           </p>
         </ProjectCard>
       </div>
