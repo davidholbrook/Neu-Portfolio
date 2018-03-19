@@ -9,7 +9,9 @@ export default () => (
     <div className="background--black">
       <Header />
     </div>
-    <Contact />
+    <main>
+      <Contact />
+    </main>
     <Footer />
   </div>
 );
