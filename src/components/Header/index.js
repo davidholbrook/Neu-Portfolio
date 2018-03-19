@@ -28,7 +28,7 @@ export default class Header extends Component {
             <Link to="/portfolio">Portfolio</Link>
           </li>
           <li>
-            <Link to="/">Contact</Link>
+            <Link to="/contact">Contact</Link>
           </li>
         </nav>
         <nav className="mobileNav">
