@@ -1,27 +1,17 @@
-import React from "react";
-import Link from "gatsby-link";
+import React from 'react';
+import Link from 'gatsby-link';
 
-import ProjectCard from "../components/ProjectCard/featured";
-import Contact from "../components/contact";
+import ProjectCard from '../components/ProjectCard/featured';
+import Contact from '../components/contact';
 
 // import in all the logos.
-import SpiritedFeet from "../layouts/images/client/spiritedfeet.png";
-import applebarn from "../layouts/images/client/applebarn.png";
+import SpiritedFeet from '../layouts/images/client/spiritedfeet.png';
+import applebarn from '../layouts/images/client/applebarn.png';
 
 const IndexPage = () => (
   <main className="fullwidth">
     <h2 className="title">Featured Projects</h2>
     <div className="ProjectCard__wrapper">
-      <ProjectCard logo={applebarn} bgColor="#981B38" link="project/applebarn">
-        <h2>Apple Barn Orchard and Winery</h2>
-        <p>
-          Apple Barn is a family-owned farm located in Elkhorn, Wisconsin. They
-          specialize in fresh Strawberries, Pumpkins, many different varieties
-          of Apples, and wine. Families of all kinds can come to the farm and
-          expect a fun experience of picking up the freshest fruit and sample
-          great wine at the winery.
-        </p>
-      </ProjectCard>
       <ProjectCard
         logo={SpiritedFeet}
         bgColor="#142440"
@@ -33,6 +23,16 @@ const IndexPage = () => (
           Their mission is to teach dance and christian teaching in a
           non-competitive environment. They teach grades 3 through 12 and offer
           classes many nights a week.
+        </p>
+      </ProjectCard>
+      <ProjectCard logo={applebarn} bgColor="#981B38" link="project/applebarn">
+        <h2>Apple Barn Orchard and Winery</h2>
+        <p>
+          Apple Barn is a family-owned farm located in Elkhorn, Wisconsin. They
+          specialize in fresh Strawberries, Pumpkins, many different varieties
+          of Apples, and wine. Families of all kinds can come to the farm and
+          expect a fun experience of picking up the freshest fruit and sample
+          great wine at the winery.
         </p>
       </ProjectCard>
     </div>

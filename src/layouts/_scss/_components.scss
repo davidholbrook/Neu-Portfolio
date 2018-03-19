@@ -126,9 +126,9 @@ $Crimson: "Crimson Text", Georgia, "Times New Roman", Times, serif;
   display: grid;
   grid-template-columns: 200px 1fr;
   grid-gap: 2rem;
-  padding: 2rem;
+  padding: 2rem 2rem 0rem;
   justify-content: space-around;
-  align-items: center;
+  align-items: start;
 
   @media (max-width: 560px) {
     display: flex;
@@ -146,8 +146,10 @@ $Crimson: "Crimson Text", Georgia, "Times New Roman", Times, serif;
     padding: 0 1rem;
   }
 }
-@media (max-width: 500px) {
-  .ProjectFeat__logo {
+.ProjectFeat__logo {
+  display: flex;
+  align-self: center;
+  @media (max-width: 500px) {
     margin-bottom: 1.5rem;
   }
 }
