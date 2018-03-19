@@ -23,7 +23,7 @@ const AboutDavid = () => (
         <div className="about__graphic">
           <span className="clients">
             <strong>14</strong>
-            Diffrent Clients
+            Different Clients
           </span>
           <span className="clients">
             <strong>10</strong>
