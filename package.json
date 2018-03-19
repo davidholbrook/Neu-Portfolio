@@ -4,7 +4,6 @@
   "version": "1.0.0",
   "author": "Kyle Mathews <mathews.kyle@gmail.com>",
   "dependencies": {
-    "conversational-form": "^0.9.80",
     "gatsby": "^1.9.199",
     "gatsby-link": "^1.6.37",
     "gatsby-plugin-favicon": "^2.1.1",
@@ -19,12 +18,9 @@
     "gatsby-source-filesystem": "^1.5.20",
     "gatsby-transformer-remark": "^1.7.37",
     "invert-color": "^1.2.2",
-    "nprogress": "^0.2.0",
-    "prisma": "^1.4.1",
     "prismjs": "^1.12.2",
     "prop-types": "^15.6.0",
     "react": "^16.2.0",
-    "react-dom": "^16.2.0",
     "react-helmet": "^5.2.0"
   },
   "keywords": [
