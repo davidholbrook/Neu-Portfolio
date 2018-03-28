@@ -23,7 +23,7 @@ export default function Template({ data }) {
           <h3>URL</h3>
           {project.frontmatter.url ? (
             <p>
-              <Link to="{project.frontmatter.url}">
+              <Link to={project.frontmatter.url}>
                 {project.frontmatter.url}
               </Link>
             </p>
