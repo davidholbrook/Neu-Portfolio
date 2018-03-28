@@ -23,9 +23,7 @@ export default function Template({ data }) {
           <h3>URL</h3>
           {project.frontmatter.url ? (
             <p>
-              <Link to={project.frontmatter.url}>
-                {project.frontmatter.url}
-              </Link>
+              <a href={project.frontmatter.url}>{project.frontmatter.url}</a>
             </p>
           ) : (
             <p>No website available</p>
