@@ -1,4 +1,4 @@
-const path = require("path");
+const path = require('path');
 
 exports.createPages = ({ graphql, boundActionCreators }) => {
   const { createPage } = boundActionCreators;
@@ -15,14 +15,14 @@ exports.createPages = ({ graphql, boundActionCreators }) => {
           }
         }
       }
-    `).then(res => {
+    `).then((res) => {
       res.data.allMarkdownRemark.edges.forEach(({ node }) => {
         createPage({
           path: node.frontmatter.path,
-          component: path.resolve("./src/layouts/projects.js"),
+          component: path.resolve('./src/layouts/projects.js'),
           context: {
-            path: node.frontmatter.path
-          }
+            path: node.frontmatter.path,
+          },
         });
       });
     });
