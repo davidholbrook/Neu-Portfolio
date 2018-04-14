@@ -40,7 +40,11 @@ Another project I was tasked with in the school was to do some research and come
 
 ### A Two-Sided Store
 
-One of the first things that we had discussed was creating a two-sided store. One side would be for alumni and students to buy school supplies and the other for special events. After this, I started looking at how other schools in the association did art sales. I found some specific strengths within MCAD, one of which is their fantastic art sale each year. Because of this, I built a compositional prototype for the school. This prototype showed the school could sell products, using categorization and featured sections.
+![Screenshot of School Store](./school_store.png)
+
+One of the first things that we had discussed was creating a two-sided store. One side would be for alumni and students to buy [school supplies](http://share.framerjs.com/0b7mujh3ed3c/) and the other for [special events](http://share.framerjs.com/22vdysq84h59/). After this, I started looking at how other schools in the association did art sales. I found some specific strengths within MCAD, one of which is their fantastic art sale each year. Because of this, I built a compositional prototype for the school. This prototype showed the school could sell products, using categorization and featured sections.
+
+![Screenshot of School Auction](./auction.png)
 
 This prototype is being used by the school for future consideration.
 
