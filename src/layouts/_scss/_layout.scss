@@ -192,6 +192,9 @@ small,
   li {
     margin: -20px 10px;
   }
+  @media (max-width: 1180px) {
+    padding: 0 1rem;
+  }
 }
 .intro {
   color: #ffffff;
@@ -288,7 +291,7 @@ button[type="submit"] {
 main {
   padding: 0 30rem 0 2rem;
   min-height: 60vh;
-  @media (max-width: 1150px) {
+  @media (max-width: 1180px) {
     padding: 0 2rem;
   }
 }
@@ -301,6 +304,13 @@ main.grid {
   grid-template-columns: 300px 50rem;
   grid-template-areas: "meta children";
   grid-gap: 3rem;
+  @media (max-width: 1180px) {
+    display: block;
+    width: 90%;
+    padding: 0 1rem;
+    margin: 0;
+    grid-gap: 0;
+  }
 }
 
 .mainFooter {
@@ -313,8 +323,8 @@ main.grid {
   margin-top: 2rem;
   display: flex;
   flex-direction: column;
-  justify-content: flex-end;
-  text-align: right;
+  justify-content: center;
+  text-align: center;
 
   p {
     margin: 0.5rem;
@@ -323,7 +333,6 @@ main.grid {
   a {
     color: rgba(#ffffff, 0.8);
   }
-
   @media (max-width: 570px) {
     font-size: 0.5rem;
   }
@@ -333,7 +342,7 @@ main.grid {
   list-style: none;
   margin-left: -40px;
   display: flex;
-  flex-direction: row-reverse;
+  justify-content: center;
 
   li {
     margin: 0 1rem;
